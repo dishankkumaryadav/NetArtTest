@@ -16,8 +16,12 @@ const Footer = () => {
         </div>
         <div className="box">
             <Contact text="Toll free 18002001734" icon={<FaSquarePhone />}/>
-            <Contact text="www.facebook.com/cripumps" icon={<FaFacebook />}/>
+            <a href="http://facebook.com/cripumps" target="_blank" rel="noopener noreferrer">
+            <Contact text= "www.facebook.com/cripumps" icon={<FaFacebook />}/>
+            </a>
+            <a href="http://cripumps.com" target="_blank" rel="noopener noreferrer">
             <Contact text="www.cripumps.com" icon={<FaGlobe />}/>
+            </a>
         </div>
     </Container>
   )
@@ -31,6 +35,10 @@ const Container = styled.div`
     align-items: center;
     margin-top: 10px;
     gap: 10px;
+
+    .box a{
+        text-decoration: none;
+    }
 
     .heading{
         font-weight: bold;
