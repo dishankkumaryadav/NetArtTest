@@ -12,7 +12,7 @@ const Footer = () => {
         C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS
         </div>
         <div className="contents">
-            CHEMICALS & PROCESS | POWER | WATER & WASTE WATER | OILS & GAS | PHARMA | SUGARS & DISTILLERIES | PAPER & PULP | MARINE & DEFENCE | METAL & MINING | FOOD & BEVERAGE | PETROCHEMICAL & REFINERIES | SOLAR | BUILDING | HVAC | FIRE FIGHTING | AGRICULTURE & RESIDENTIAL
+            CHEMICALS & PROCESS <div className="line"></div> POWER <div className="line"></div> WATER & WASTE WATER <div className="line"></div> OILS & GAS <div className="line"></div> PHARMA <div className="line"></div> SUGARS & DISTILLERIES <div className="line"></div> PAPER & PULP <div className="line"></div> MARINE & DEFENCE <div className="line"></div> METAL & MINING <div className="line"></div> FOOD & BEVERAGE <div className="line"></div> PETROCHEMICAL & REFINERIES <div className="line"></div> SOLAR <div className="line"></div> BUILDING <div className="line"></div> HVAC <div className="line"></div> FIRE FIGHTING <div className="line"></div> AGRICULTURE & RESIDENTIAL
         </div>
         <div className="box">
             <Contact text="Toll free 18002001734" icon={<FaSquarePhone />}/>
@@ -22,6 +22,7 @@ const Footer = () => {
             <a href="http://cripumps.com" target="_blank" rel="noopener noreferrer">
             <Contact text="www.cripumps.com" icon={<FaGlobe />}/>
             </a>
+            
         </div>
     </Container>
   )
@@ -47,6 +48,13 @@ const Container = styled.div`
     .contents{
         max-width: 90%;
         text-align: center;
+    }
+
+    .contents .line{
+        background: #e80b0bc3;
+        width: 1px;
+        height: 15px;
+        display: inline-block;
     }
 
     .box{
