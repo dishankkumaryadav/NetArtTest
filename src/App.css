@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  padding: 10px;
+
+  /* background  */
+  background: hsla(0, 0%, 100%, 1);
+
+  background: linear-gradient(270deg, hsla(0, 0%, 100%, 1) 0%, hsla(55, 100%, 86%, 1) 100%);
+  
+  background: -moz-linear-gradient(270deg, hsla(0, 0%, 100%, 1) 0%, hsla(55, 100%, 86%, 1) 100%);
+  
+  background: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, 1) 0%, hsla(55, 100%, 86%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FFF9B6", GradientType=1 );
+}
